@@ -40,3 +40,49 @@ class MaterialItem {
     String[] properties;
 }
 ```
+
+### 詳細に分割する
+```java
+class MaterialItem {
+    Name categoryName;
+    Name name;
+    Quality quality;
+    Image image;
+    QualityTitles qualityTitle;
+    Byte costLevel;
+    String qualityVary;
+    EffectList effects;
+    PropertyList properties;
+}
+
+class Name {
+    String value;
+}
+
+class Quality {
+    Byte value;
+    Byte Rank();
+}
+
+class QualityTitles {
+    String[] values;
+}
+
+class CostLevel {
+    Byte value;
+}
+
+class Effect {
+    Name name;
+}
+class EffectList {
+    Effect[] data;
+}
+
+class Property {
+    Name name;
+}
+class PropertyList {
+    Property[] data;
+}
+```
