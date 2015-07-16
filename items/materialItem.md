@@ -70,6 +70,28 @@ class MaterialItem {
 }
 ```
 
+#### アイテムの名前
+カテゴリと同様に、Nameクラスを使う
+
+```java
+class Name {
+    String value;
+}
+class MaterialItem {
+    Category category;
+    Name name;
+    String qualityRank;
+    Image image;
+    String qualityTitle;
+    Byte quality;
+    Byte costLevel;
+    String qualityVary;
+    String[] effects;
+    String[] properties;
+}
+```
+
+
 ```java
 class Name {
     String value;
