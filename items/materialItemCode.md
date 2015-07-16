@@ -58,8 +58,11 @@ class MaterialItem {
 意味合いとしては、アイテムに直接紐づくものであるため。
 
 ```java
-class Rank {
-    String value;
+class ItemRank {
+    enum Kind {
+        S, A, B, C, D, E
+    };
+    Kind culc();
 }
 class MaterialItem {
     Rank rank;
