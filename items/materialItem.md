@@ -42,19 +42,35 @@ class MaterialItem {
 ```
 
 ### 詳細に分割する
+オブジェクティブ指向エクササイズの要素である以下の項目に沿って、プロパティを整理してみる。
+- 全てのプリミティブとstringをラップする
+- 3つ以上のインスタンス変数を持ったクラスは使わない
+
+#### カテゴリの名前について
+「名前」とは、とても広範囲に存在するため、名前という要素を持つ、「カテゴリ」クラスを作成する。
+
 ```java
-class MaterialItem {
-    Name categoryName;
+class Name {
+    String value;
+}
+class Category {
     Name name;
-    Quality quality;
+}
+class MaterialItem {
+    Category category;
+    String name;
+    String qualityRank;
     Image image;
-    QualityTitles qualityTitle;
+    String qualityTitle;
+    Byte quality;
     Byte costLevel;
     String qualityVary;
-    EffectList effects;
-    PropertyList properties;
+    String[] effects;
+    String[] properties;
 }
+```
 
+```java
 class Name {
     String value;
 }
