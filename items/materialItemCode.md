@@ -38,15 +38,6 @@ class Category {
 }
 class MaterialItem {
     Category category;
-    String name;
-    String qualityRank;
-    Image image;
-    String qualityTitle;
-    Byte quality;
-    Byte costLevel;
-    String qualityVary;
-    String[] effects;
-    String[] properties;
 }
 ```
 
@@ -58,16 +49,7 @@ class Name {
     String value;
 }
 class MaterialItem {
-    Category category;
     Name name;
-    String qualityRank;
-    Image image;
-    String qualityTitle;
-    Byte quality;
-    Byte costLevel;
-    String qualityVary;
-    String[] effects;
-    String[] properties;
 }
 ```
 
