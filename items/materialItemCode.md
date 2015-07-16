@@ -59,50 +59,25 @@ class MaterialItem {
 
 ```java
 class Rank {
+    String value;
 }
 class MaterialItem {
-    Category category;
-    Name name;
     Rank rank;
-    Image image;
-    String qualityTitle;
-    Byte quality;
-    Byte costLevel;
-    String qualityVary;
-    String[] effects;
-    String[] properties;
 }
 ```
 
+### アイテムイメージ
+
+[素材アイテムを見る](materialItem.md)では、鮮明な画像が表示されていたが、
+未発見のアイテムについては、シルエットだけが表示される。
+その点も踏まえてコード化する。
+
 ```java
-class Name {
-    String value;
+class ItemImage {
+    Image original;
+    Image shadow;
 }
-
-class Quality {
-    Byte value;
-    Byte Rank();
-}
-
-class QualityTitles {
-    String[] values;
-}
-
-class CostLevel {
-    Byte value;
-}
-
-class Effect {
-    Name name;
-}
-class EffectList {
-    Effect[] data;
-}
-
-class Property {
-    Name name;
-}
-class PropertyList {
-    Property[] data;
+class MaterialItem {
+    ItemImage imageset;
 }
 ```
