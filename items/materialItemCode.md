@@ -62,7 +62,7 @@ class ItemRank {
     enum Kind {
         S, A, B, C, D, E
     };
-    Kind culc();
+    Kind culc(Quality quality);
 }
 class MaterialItem {
     Rank rank;
@@ -85,7 +85,21 @@ class MaterialItem {
 }
 ```
 
-### 品質の称号
+### アイテムの称号
+
+アイテムの称号は、アイテムのランクによって左右される。つまり、ランクの数だけ称号がある。
+
+```java
+class Title {
+    String value;
+}
+class TitleSet {
+    Title[] list;
+}
+class MaterialItem {
+    TitleSet titles;
+}
+```
 
 ### 品質
 
