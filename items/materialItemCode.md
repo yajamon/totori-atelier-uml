@@ -103,6 +103,15 @@ class MaterialItem {
 
 ### 品質
 
+```java
+class Quality {
+    Byte value;
+}
+class MaterialItem {
+    Quality quality;
+}
+```
+
 ### コストレベル
 
 ### 劣化速度/充填速度
