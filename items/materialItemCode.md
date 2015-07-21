@@ -114,7 +114,26 @@ class MaterialItem {
 
 ### コストレベル
 
+```java
+class CostLevel {
+    Byte value;
+}
+class MaterialItem {
+    CostLevel costLevel;
+}
+```
+
 ### 劣化速度/充填速度
+
+```java
+class QualityVary {
+    float value;
+    String name;
+}
+class MaterialItem {
+    QualityVary quarityVary;
+}
+```
 
 ### 効果一覧
 
