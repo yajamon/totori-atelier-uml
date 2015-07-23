@@ -136,5 +136,19 @@ class MaterialItem {
 ```
 
 ### 効果一覧
+```java
+class Name {
+    String value;
+}
+class Effect {
+    Name name;
+}
+class EffectList {
+    Effect[] list;
+}
+class MaterialItem {
+    EffectList effects;
+}
+```
 
 ### 特性一覧
